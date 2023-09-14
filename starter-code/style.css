@@ -39,6 +39,12 @@ body {
   gap: 150px;
 }
 
+.password-div:hover > img {
+  filter: invert(10%) sepia(10%) saturate(100%) hue-rotate(99deg)
+    brightness(500%) contrast(105%);
+  cursor: pointer;
+}
+
 .password-result {
   color: var(--Almost-White, #e6e5ea);
   font-size: 24px;
@@ -47,13 +53,10 @@ body {
   padding: 17px 0px 0px 16px;
 }
 
-.svg {
-  margin-top: 20px;
-}
-
-.svg:hover {
-  color: rgba(255, 255, 255, 1);
-  cursor: pointer;
+.copy-img {
+  margin-top: 22px;
+  width: 17.5px;
+  height: 20px;
 }
 
 .main {
@@ -226,6 +229,11 @@ body {
   cursor: pointer;
 }
 
+.btn:hover > img {
+  filter: invert(88%) sepia(22%) saturate(681%) hue-rotate(66deg)
+    brightness(102%) contrast(102%);
+}
+
 /* tablet */
 
 @media screen and (min-width: 768px) {
@@ -246,7 +254,7 @@ body {
     padding: 19px 0px 0px 32px;
   }
 
-  .svg {
+  .copy-img {
     width: 21px;
     height: 24px;
     margin-top: 28px;
