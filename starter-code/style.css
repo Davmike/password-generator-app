@@ -132,17 +132,54 @@ body {
   background: var(--Dark-Grey, #24232c);
 }
 
-.check-img {
-  content: "";
-  position: absolute;
-  display: none;
-  left: 7.6%;
-}
-
 #checkbox-input:checked + .custom-checkbox {
   background-color: rgba(164, 255, 175, 1);
   background-image: url(assets/images/icon-check.svg);
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+}
+
+.strength-div {
+  width: 311px;
+  height: 56px;
+  background: #18171f;
+  margin: 32px 16px 16px 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.strength {
+  color: var(--Grey, #817d92);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 57px;
+}
+
+.medium {
+  color: var(--Almost-White, #e6e5ea);
+  text-align: right;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 8px;
+}
+
+.password-strength {
+  width: 10px;
+  height: 28px;
+  border: 2px solid var(--Almost-White, #e6e5ea);
+}
+
+.password-strength-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  gap: 8px;
+  margin-left: 57px;
 }
