@@ -156,7 +156,6 @@ body {
   text-align: center;
   font-size: 16px;
   font-weight: 700;
-  gap: 57px;
 }
 
 .medium {
@@ -182,4 +181,121 @@ body {
   display: flex;
   gap: 8px;
   margin-left: 57px;
+}
+
+.btn {
+  width: 311px;
+  height: 56px;
+  background: var(--Neon-Green, #a4ffaf);
+  border: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.generate {
+  color: var(--Dark-Grey, #24232c);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* tablet */
+
+@media screen and (min-width: 768px) {
+  .password-generator-text {
+    font-size: 24px;
+  }
+
+  .password-div {
+    width: 540px;
+    height: 80px;
+    display: flex;
+    gap: 263px;
+    margin-top: 31px;
+  }
+
+  .password-result {
+    font-size: 32px;
+    padding: 19px 0px 0px 32px;
+  }
+
+  .svg {
+    width: 21px;
+    height: 24px;
+    margin-top: 28px;
+  }
+
+  .main {
+    width: 540px;
+    height: 528px;
+  }
+
+  .character-text {
+    font-size: 18px;
+  }
+
+  .character-number {
+    font-size: 32px;
+  }
+
+  .character {
+    gap: 263px;
+    padding: 24px 32px 0px 32px;
+  }
+
+  #range {
+    width: 476px;
+  }
+
+  .input {
+    margin-top: 32px;
+  }
+
+  .main-text {
+    font-size: 18px;
+  }
+
+  .parametres-div {
+    margin-top: 42px;
+  }
+
+  .toogle {
+    gap: 24px;
+    margin-left: 32px;
+    margin-top: 19px;
+  }
+
+  .strength-div {
+    width: 476px;
+    height: 72px;
+    margin: 31px 32px 32px 32px;
+  }
+
+  .strength {
+    font-size: 18px;
+  }
+
+  .medium {
+    font-size: 24px;
+  }
+
+  .password-strength-div {
+    margin-left: 159px;
+  }
+
+  .btn {
+    width: 476px;
+    height: 65px;
+  }
+
+  .generate {
+    font-size: 18px;
+  }
+
+  .arrow-img {
+    margin-bottom: 3px;
+  }
 }
