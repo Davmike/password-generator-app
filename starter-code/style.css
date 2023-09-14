@@ -51,6 +51,11 @@ body {
   margin-top: 20px;
 }
 
+.svg:hover {
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
 .main {
   margin-top: 16px;
   background: var(--Dark-Grey, #24232c);
@@ -106,6 +111,12 @@ body {
   height: 28px;
 }
 
+#range::-webkit-slider-thumb:hover {
+  background-color: var(--Very-Dark-Grey, #18171f);
+  border: 2px solid var(--Neon-Green, #a4ffaf);
+  cursor: pointer;
+}
+
 .main-text {
   color: var(--Almost-White, #e6e5ea);
   font-size: 16px;
@@ -138,6 +149,11 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border: none;
+}
+
+.custom-checkbox:hover {
+  border: 2px solid var(--Neon-Green, #a4ffaf);
+  cursor: pointer;
 }
 
 .strength-div {
@@ -192,14 +208,22 @@ body {
   justify-content: center;
   align-items: center;
   gap: 16px;
+  /* text */
+  color: var(--Dark-Grey, #24232c);
 }
 
 .generate {
-  color: var(--Dark-Grey, #24232c);
   text-align: center;
   font-size: 16px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.btn:hover {
+  background: var(--Dark-Grey, #24232c);
+  border: 2px solid var(--Neon-Green, #a4ffaf);
+  color: var(--Neon-Green, #a4ffaf);
+  cursor: pointer;
 }
 
 /* tablet */
