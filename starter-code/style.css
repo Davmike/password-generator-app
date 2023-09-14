@@ -113,6 +113,7 @@ body {
 }
 
 .toogle {
+  position: relative;
   display: flex;
   gap: 20px;
   margin-left: 16px;
@@ -127,4 +128,21 @@ body {
   width: 20px;
   height: 20px;
   border: 2px solid var(--Almost-White, #e6e5ea);
+  position: absolute;
+  background: var(--Dark-Grey, #24232c);
+}
+
+.check-img {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 7.6%;
+}
+
+#checkbox-input:checked + .custom-checkbox {
+  background-color: rgba(164, 255, 175, 1);
+  background-image: url(assets/images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
 }
