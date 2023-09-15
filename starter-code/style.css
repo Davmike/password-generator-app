@@ -36,7 +36,7 @@ body {
   height: 64px;
   margin-top: 16px;
   display: flex;
-  gap: 150px;
+  justify-content: space-between;
 }
 
 .password-div:hover > img {
@@ -53,8 +53,23 @@ body {
   padding: 17px 0px 0px 16px;
 }
 
+.copy-div {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 15.5px;
+}
+
+.copy {
+  color: var(--Neon-Green, #a4ffaf);
+  font-size: 18px;
+  font-weight: 700;
+  width: 65px;
+  height: 24px;
+  display: none;
+}
+
 .copy-img {
-  margin-top: 22px;
   width: 17.5px;
   height: 20px;
 }
@@ -146,7 +161,7 @@ body {
   background: var(--Dark-Grey, #24232c);
 }
 
-#checkbox-input:checked + .custom-checkbox {
+.checkbox-input:checked + .custom-checkbox {
   background-color: rgba(164, 255, 175, 1);
   background-image: url(assets/images/icon-check.svg);
   background-repeat: no-repeat;
@@ -242,10 +257,10 @@ body {
   }
 
   .password-div {
+    display: flex;
     width: 540px;
     height: 80px;
-    display: flex;
-    gap: 263px;
+    justify-content: space-between;
     margin-top: 31px;
   }
 
@@ -257,7 +272,14 @@ body {
   .copy-img {
     width: 21px;
     height: 24px;
-    margin-top: 28px;
+  }
+
+  .copy {
+    font-size: 18px;
+  }
+
+  .copy-div {
+    padding: 29px;
   }
 
   .main {

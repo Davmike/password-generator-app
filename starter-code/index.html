@@ -21,11 +21,14 @@
       <!-- password div -->
       <div class="password-div">
         <h1 class="password-result">PTx1f5DaFX</h1>
-        <img
-          class="copy-img"
-          src="assets/images/icon-copy.svg"
-          alt="copy image"
-        />
+        <div class="copy-div">
+          <span class="copy">COPIED</span>
+          <img
+            class="copy-img"
+            src="assets/images/icon-copy.svg"
+            alt="copy image"
+          />
+        </div>
       </div>
       <div class="main">
         <div class="character">
@@ -39,25 +42,25 @@
         <div class="parametres-div">
           <!-- Include Uppercase Letters -->
           <label class="toogle">
-            <input type="checkbox" id="checkbox-input" />
+            <input type="checkbox" class="checkbox-input input-uppercase" />
             <div class="custom-checkbox"></div>
             <h2 class="main-text uppercase">Include Uppercase Letters</h2>
           </label>
           <!-- Include Lowercase Letters -->
           <label class="toogle">
-            <input type="checkbox" id="checkbox-input" />
+            <input type="checkbox" class="checkbox-input input-lowercase" />
             <div class="custom-checkbox"></div>
             <h2 class="main-text lowercase">Include Lowercase Letters</h2>
           </label>
           <!-- Include Numbers -->
           <label class="toogle">
-            <input type="checkbox" id="checkbox-input" />
+            <input type="checkbox" class="checkbox-input include-numbers" />
             <div class="custom-checkbox"></div>
             <h2 class="main-text numbers">Include Numbers</h2>
           </label>
           <!-- Include Symbols -->
           <label class="toogle">
-            <input type="checkbox" id="checkbox-input" />
+            <input type="checkbox" class="checkbox-input input-symbols" />
             <div class="custom-checkbox"></div>
             <h2 class="main-text symbols">Include Symbols</h2>
           </label>
@@ -67,13 +70,13 @@
           <h2 class="strength">Strength</h2>
           <div class="password-strength-div">
             <h2 class="medium">medium</h2>
-            <div class="password-strength"></div>
-            <div class="password-strength"></div>
-            <div class="password-strength"></div>
-            <div class="password-strength"></div>
+            <div class="password-strength first"></div>
+            <div class="password-strength second"></div>
+            <div class="password-strength third"></div>
+            <div class="password-strength fourth"></div>
           </div>
         </div>
-        <button class="btn">
+        <button onclick="passwordGenerator()" class="btn">
           <h2 class="generate">Generate</h2>
           <img
             class="arrow-img"
