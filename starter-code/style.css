@@ -39,12 +39,6 @@ body {
   justify-content: space-between;
 }
 
-.password-div:hover > img {
-  filter: invert(10%) sepia(10%) saturate(100%) hue-rotate(99deg)
-    brightness(500%) contrast(105%);
-  cursor: pointer;
-}
-
 .password-result {
   color: var(--Almost-White, #e6e5ea);
   font-size: 24px;
@@ -58,6 +52,12 @@ body {
   align-items: center;
   gap: 16px;
   padding: 15.5px;
+}
+
+.copy-div:hover > img {
+  filter: invert(10%) sepia(10%) saturate(100%) hue-rotate(99deg)
+    brightness(500%) contrast(105%);
+  cursor: pointer;
 }
 
 .copy {
@@ -180,9 +180,10 @@ body {
   background: #18171f;
   margin: 32px 16px 16px 16px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
+  padding: 0px 16px 0px 16px;
 }
 
 .strength {
@@ -208,13 +209,11 @@ body {
 }
 
 .password-strength-div {
-  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   display: flex;
   gap: 8px;
-  margin-left: 57px;
 }
 
 .btn {
@@ -326,6 +325,7 @@ body {
     width: 476px;
     height: 72px;
     margin: 31px 32px 32px 32px;
+    padding: 0px 21.5px 0px 32px;
   }
 
   .strength {
@@ -334,10 +334,7 @@ body {
 
   .medium {
     font-size: 24px;
-  }
-
-  .password-strength-div {
-    margin-left: 159px;
+    width: 130px;
   }
 
   .btn {
